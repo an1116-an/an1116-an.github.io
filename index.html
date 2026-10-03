@@ -20,7 +20,6 @@
             background: #f8fafc;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -55,7 +54,6 @@
             color: #38bdf8;
         }
 
-        /* Hero */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -107,7 +105,6 @@
             transform: translateY(-2px);
         }
 
-        /* General Sections */
         section {
             padding: 80px 10%;
         }
@@ -119,7 +116,6 @@
             color: #0f172a;
         }
 
-        /* About */
         .about {
             max-width: 900px;
             margin: auto;
@@ -128,7 +124,6 @@
             color: #475569;
         }
 
-        /* Experience */
         .experience-card {
             max-width: 900px;
             margin: auto;
@@ -150,7 +145,6 @@
             margin-bottom: 15px;
         }
 
-        /* Skills */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -174,7 +168,6 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
 
-        /* Projects */
         .projects-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -205,7 +198,6 @@
             color: #64748b;
         }
 
-        /* Contact */
         .contact {
             background: #0f172a;
             color: white;
@@ -226,7 +218,6 @@
             text-decoration: none;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -234,7 +225,6 @@
             color: #94a3b8;
         }
 
-        /* Mobile */
         @media (max-width: 700px) {
             nav {
                 flex-direction: column;
@@ -280,7 +270,7 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1>Aarav Nadkarni/h1>
+            <h1>Aarav Nadkarni</h1>
 
             <h2>
                 Business Analytics & Information Technology Student
@@ -382,7 +372,6 @@
 
         <div class="projects-container">
 
-            <!-- Dormdish -->
             <div class="project-card">
                 <h3>Dormdish</h3>
 
@@ -396,7 +385,6 @@
             </div>
 
 
-            <!-- YouTube -->
             <div class="project-card">
                 <h3>Coding YouTube Channel</h3>
 
@@ -421,7 +409,6 @@
             Interested in connecting? Feel free to reach out.
         </p>
 
-        <!-- Replace these placeholders with your actual information -->
         <p>
             Email:
             <a href="mailto:your.email@example.com">
@@ -448,17 +435,13 @@
     <!-- Footer -->
     <footer>
         <p>
-            &copy; 2026 Aarav Nadkarni. All Rights Reserved.
+            &copy; <span id="year"></span> Aarav Nadkarni. All Rights Reserved.
         </p>
     </footer>
 
 
-    <!-- Simple JavaScript -->
     <script>
-        // Updates the footer year automatically
-        const year = new Date().getFullYear();
-        document.querySelector("footer p").innerHTML =
-            `&copy; ${year} Aarav Nadkarni. All Rights Reserved.`;
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
 </body>
